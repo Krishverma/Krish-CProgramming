@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+#include<dos.h>
+#include<string.h>
+#include<graphics.h>
+
+
+void background(int);
+void logo(int);
+
+void main()
+{
+ int n=1;l=1;
+ background(n);
+ logo(l);
+
+
+
+
+
+ getch();
+}
+//Function for background and heading
+void background(int n)
+{
+ if(n==1)
+ {
+  int bgi=DETECT,bg;
+  initgraph(&bgi,&bg,"c:\\turboc3\\bgi");
+  setbkcolor(9);
+  settextstyle(1,0,4);
+  setcolor(14);
+  outtextxy(getmaxx()/2-180,30,"CANARA BANK PVT LTD");
+  setcolor(0);
+ }
+}
+//Function for Bank logo
+void logo(int l)
+ {
+  if(l==1)
+   {
+    int i;
+    for(i=10;i<90;i++)
+     {
+      delay(100);
+      setcolor(0/10);
+      arc(getmaxx()/2-200,30,0,180,i-10);
+     }
+   }
+ }

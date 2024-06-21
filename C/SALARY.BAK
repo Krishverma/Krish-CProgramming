@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main()
+{
+int bs,gs,b,c,tx,ns;
+clrscr();
+printf("Enter Your Basic Salary:");
+scanf("%d",&bs);
+b=bs/10;
+c=bs/20;
+gs=bs+b+c;
+tx=gs/10;
+ns=gs-tx;
+printf("\n Your Basic Salary is: %d",bs);
+printf("\n Your Bonus is: %d",d);
+printf("\n Your Comission is: %d",c);
+printf("\n Gross Salary: %d",gs);
+printf("\n Tax To be Deducted: %d",tx);
+printf("\n Net Salary Amount: %d",ns);
+getch();
+}

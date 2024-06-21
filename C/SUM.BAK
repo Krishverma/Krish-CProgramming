@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+int a,b,c;
+clrscr();
+a=100;
+b=200;
+c=a+b;
+printf("The sum of two numbers is: %d",c)
+getch();
+}

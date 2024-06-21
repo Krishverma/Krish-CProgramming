@@ -1,0 +1,60 @@
+#include<stdio.h>
+#include<ctype.h>
+void main()
+{
+int choice,n1,n3,x,y;
+char a;
+clrscr();
+printf("\n Main Menu");
+printf("\n 1.Odd/Even");
+printf("\n 2.Vowel/Consonent");
+printf("\n 3.Positive/Negative");
+printf("\n 4.Swapping");
+printf("\n 5.Exit");
+printf("\n Enter Your Choice;");
+scanf("%d,",&choice);
+switch(choice)
+{
+	case 1:
+		printf("\n Enter any Number:");
+		scanf("%d",&n1);
+		if(n1%2==0)
+			printf("\n Number is even");
+		else
+			printf("\n Number is Odd");
+		break;
+	case 2:
+		printf("\n Enter any Alphabet:");
+		fflush(stdin);
+		scanf("%c",&a);
+		if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u')
+			printf("\n It is a Vowel");
+		else
+			printf("\n It is a Consonent");
+		break;
+	case 3:
+		printf("\n Enter any Number:");
+		scanf("%d",&n3);
+		if(n3>0)
+			printf("\n Number is Positive");
+		else if(n3==0)
+			printf("\n Number is Zero");
+		else
+			printf("\n Number is Negative");
+		break;
+	case 4:
+		printf("\n Enter any two Numbers:");
+		scanf("%d %d",&x,&y);
+		printf("\n Numbers before Swapping: %d and %d",x,y);
+		x=x+y;
+		y=x-y;
+		x=x-y;
+		printf("\n Numbers after Swapping: %d and %d",x,y);
+		break;
+	case 5:
+		exit(0);
+	default:
+		printf("Invalid Choice");
+}
+getch();
+}

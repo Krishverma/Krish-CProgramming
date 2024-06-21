@@ -1,0 +1,16 @@
+void main()
+{
+int n,ld,fd,s;
+clrscr();
+printf("\nEnter number:");
+scanf("%d",&n);
+ld=n%10;
+while(n>10)
+{
+n/=10;
+}
+fd=n;
+s=fd+ld;
+printf("Sum of First and Last digit: %d",s);
+getch();
+}

@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<ctype.h>
+void main()
+{
+int n;
+char a;
+clrscr();
+printf("\n Main Menu");
+printf("\n Do You Want to know Number of Days ? Y/N ");
+scanf("%c",&a);
+if(a=='y')
+	printf("\n Enter Month Number");
+	scanf("%d",&n);
+	switch(n)
+	{
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
+		printf("Number of Days is 31");
+	break;
+
+	case 2:
+		printf("Number of Days is 28 or 29");
+	break;
+
+	case 4:
+	case 6:
+	case 9:
+	case 11:
+		printf("Number of Days is 30");
+	break;
+	default:
+		printf("Invalid Month Number");
+	}
+getch();
+}
+
+
+

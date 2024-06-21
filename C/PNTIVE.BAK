@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+int a;
+clrscr();
+printf("Enter any Number:");
+scanf("%d",&a);
+if(a>0)
+printf("\n Number is Positive");
+elseif(a==0);
+printf("\n Number is Zero");
+else
+printf("\n Number is Negative");
+getch();
+}

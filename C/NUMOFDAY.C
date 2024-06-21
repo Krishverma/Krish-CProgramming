@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+int a;
+clrscr();
+printf("Enter the Month Number:");
+scanf("%d",&a);
+
+if(a>12)
+	printf("Incorrect Month Number");
+
+else if(a==1 || a==3 || a==5 || a==7 || a==8 || a==10 || a==12)
+	printf("\n Number of Days is 31");
+
+else if(a==4 || a==6 || a==9 || a==11)
+	printf("\n Number of Days is 30");
+
+else
+	printf("\n Number of Days is 28 or 29");
+
+getch();
+}

@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<ctype.h>
+void main()
+{
+char a,b,c,d,e;
+clrscr();
+printf("\t\t\tX  Welcome To Login Portal X");
+printf("\n\n\t\t    Enter Your 5 Character Password:");
+a=getch();
+printf("*");
+b=getch();
+printf("*");
+c=getch();
+printf("*");
+d=getch();
+printf("*");
+e=getch();
+printf("*");
+getche();
+if(a=='K'&&b=='r'&&c=='i'&&d=='s'&&e=='h')
+{	printf("\n\n\t\t\t\tAccess Granted");
+	printf("\n\n\t\t\t\tFiles Unlocked");
+}
+else
+	printf("\n\n\t\t\t\tAccess Denied");
+getch();
+}
+

@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main()
+{
+int a,b;
+clrscr();
+printf("Enter any Number:");
+scanf("%d",&a);
+if(a%2==0)
+{
+	b=a*a;
+	printf("\n Square of Number: %d",b);
+}
+else
+{
+	b=a*a*a;
+	printf("\n Cube of Number: %d",b);
+}
+getch();
+}
+

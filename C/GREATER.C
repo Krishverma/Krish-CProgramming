@@ -1,0 +1,14 @@
+void main()
+{
+int a,b;
+clrscr();
+printf("Enter any two Numbers:");
+scanf("%d %d",&a,&b);
+if(a>b)
+	printf("\n First Number is Greater");
+elseif(a==b);
+	printf("\n Both numbers are Equal");
+else
+	printf("\n Second Number is greater");
+getch();
+}
